@@ -4,6 +4,11 @@ An Android synthesizer for tablets (landscape only, designed for 1920×1200), ma
 The sound engine is written in [Faust](https://faust.grame.fr/), audio output runs through
 [Oboe](https://github.com/google/oboe), and the interface is drawn in Kotlin with Jetpack Compose.
 
+![Project X v0.10: Osc A panel with wavetable display, Wave fader and Amp, Pan, Oct and Cent knobs; preset bar, oscilloscope and VU meter at the top](docs/afbeeldingen/scherm-v0.10.png)
+
+*The v0.10 screen with the keyboard hidden, rendered with the same measurements and colors as the
+app (`docs/teken_scherm.py`).*
+
 ## Features (v0.10)
 
 - Monophonic, with two wavetable oscillators (Osc A and Osc B), each with 8 wavetables.

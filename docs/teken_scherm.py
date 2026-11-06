@@ -1,7 +1,9 @@
 # Tekent het scherm van v0.10 als SVG, met dezelfde maten en tekenwijze als
 # SynthScreen.kt, Keyboard.kt, Wavetable.kt en Meters.kt. Zet het resultaat in de HTML-pagina.
 # Gebruik:  python teken_scherm.py ProjectX-logboek.html
+#           python teken_scherm.py schermafbeelding.svg --zonder-keyboard   (losse SVG, bv. voor de README)
 import math, sys, re
+ZONDER_KB = "--zonder-keyboard" in sys.argv
 
 # ---- voorbeeldstand ----
 TAB = 0             # gekozen tab: 0 = OSC A, 1 = OSC B (het paneel toont die oscillator)
@@ -15,8 +17,8 @@ CENT = 25
 PAN = -30           # Pan: L 30
 OCT_B = 1           # Osc B een octaaf hoger (alleen voor de oscilloscoop)
 SHOW3D = True
-KEYBOARD = True     # keyboard zichtbaar
-LATCH = True        # latch aan
+KEYBOARD = not ZONDER_KB   # keyboard zichtbaar
+LATCH = True        # latch aan (ook zonder keyboard blijft de noot dan klinken)
 KB_OCT = 3          # laagste noot C3
 NOTE = 52           # E3 klinkt (MIDI-nummer)
 KB_TOP = 216.958     # bovenkant keyboard
@@ -291,6 +293,11 @@ svg = ('<svg viewBox="0 0 508 317.5" role="img" aria-label="Het scherm van Proje
        + "\n".join(out) + "\n</svg>")
 
 html_path = sys.argv[1]
+if html_path.endswith(".svg"):
+    los = svg.replace('<svg viewBox=', '<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1200" viewBox=', 1)
+    open(html_path, "w", encoding="utf-8").write(los + chr(10))
+    print("losse SVG geschreven:", html_path)
+    sys.exit(0)
 html = open(html_path, encoding="utf-8").read()
 start = html.index('<svg viewBox="0 0 508 317.5"')
 end = html.index("</svg>", start) + len("</svg>")
