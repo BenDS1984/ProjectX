@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Voorstel: rechthoekige grijze knop met oranje accentstrook bovenaan.
+  Knop: 180 x 72 px, hoeken afgerond met straal 4 px.
+  Accentstrook: 5 px hoog, zelfde oranje als de voorbeeld-draaiknop (#FF8A1E).
+  Een tekst op de knop (bijv. de naam) voeg ik in de app toe.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="220px" height="120px" viewBox="0 0 220 120">
+
+  <!-- Donkere ondergrond, alleen om het voorbeeld te tonen -->
+  <g id="achtergrond" inkscape:label="achtergrond" inkscape:groupmode="layer">
+    <rect x="0" y="0" width="220" height="120" fill="#2B2B2B"/>
+  </g>
+
+  <!-- Grijs knoplichaam -->
+  <g id="knop-lichaam" inkscape:label="knop-lichaam" inkscape:groupmode="layer">
+    <rect x="20" y="24" width="180" height="72" rx="4" ry="4" fill="#474747"/>
+  </g>
+
+  <!-- Oranje accent bovenaan, met dezelfde afgeronde bovenhoeken als de knop -->
+  <g id="knop-accent" inkscape:label="knop-accent" inkscape:groupmode="layer">
+    <path d="M 20 28 A 4 4 0 0 1 24 24 H 196 A 4 4 0 0 1 200 28 V 29 H 20 Z"
+          fill="#FF8A1E"/>
+  </g>
+</svg>

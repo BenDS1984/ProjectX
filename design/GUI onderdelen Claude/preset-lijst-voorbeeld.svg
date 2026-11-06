@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Voorstel: presetsysteem, deel 1 - de presetbalk en de presetlijst.
+  Zelfde document als Synth1OscA-v6.svg (1920 x 1200 px, eenheden 508 x 317,5).
+  Presetbalk (in het vak "Preset systeem" van de bovenbalk):
+   - naamveld: naam van de geladen preset, met " *" erachter zodra er iets gewijzigd is;
+     tik = presetlijst openen;
+   - opslaan-icoon: tik = venster "Save preset" (zie preset-vensters-voorbeeld.svg).
+  Presetlijst (zelfde plaats en stijl als het wavetable-venster):
+   - Init staat altijd bovenaan, zonder iconen (beschermd);
+   - de geladen preset: lichte rand links en vette naam;
+   - tik op een naam = laden en sluiten (bij niet-opgeslagen wijzigingen eerst "Discard changes?");
+     bij laden gaat het keyboard dicht en latch uit;
+   - potlood = hernoemen (venster met tekstveld), vuilbak = verwijderen (eerst bevestigen);
+   - meer presets dan er passen: scrollen met de vinger, de schuif rechts toont waar je bent;
+   - kruisje of tik naast het venster = sluiten zonder te laden.
+  Accentkleur: neutraal lichtgrijs #c8c8c8 (de presets horen bij beide oscillatoren).
+  Tekst: Lato; namen en titels voeg ik in de app toe.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     width="1920" height="1200" viewBox="0 0 508 317.5">
+  <sodipodi:namedview inkscape:document-units="mm" pagecolor="#ffffff"/>
+  <g id="achtergrond" inkscape:label="achtergrond (alleen om te tonen)" inkscape:groupmode="layer" sodipodi:insensitive="true">
+    <rect x="0" y="0" width="508" height="317.5" fill="#666666"/>
+    <rect x="47.625" y="83.079" width="423.333" height="206.375" fill="#333333"/>
+    <rect x="0" y="0" width="508" height="37.04" fill="#1a1a1a"/>
+    <rect x="0" y="0" width="37.04" height="317.5" fill="#1a1a1a"/>
+    <rect x="481.542" y="34.813" width="26.458" height="282.687" fill="#333333"/>
+  </g>
+  <g id="presetbalk" inkscape:label="Presetbalk" inkscape:groupmode="layer">
+    <g id="preset-naamveld" inkscape:label="preset-naamveld (tik = presetlijst)">
+      <rect x="202.5" y="6.2" width="85.0" height="24.6" rx="1.6" ry="1.6" fill="#333333"/>
+      <g id="preset-naam" inkscape:label="preset-naam (tekst in de app, Lato 11,3)"><text x="207.500" y="22.500" style="font-size:11.29px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Warm Pad *</text></g>
+      <path id="preset-pijltje" inkscape:label="preset-pijltje" d="M 277.000,17.200 L 280.000,20.200 L 283.000,17.200" fill="none" stroke="#c8c8c8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="preset-opslaan" inkscape:label="preset-opslaan (tik = venster Save preset)">
+      <rect x="291.2" y="6.2" width="22.6" height="24.6" rx="1.6" ry="1.6" fill="#333333"/>
+      <g id="icoon-opslaan" inkscape:label="icoon-opslaan" transform="translate(293.860,9.860) scale(0.36)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 11,8 H 31 L 40,17 V 37 A 3,3 0 0 1 37,40 H 11 A 3,3 0 0 1 8,37 V 11 A 3,3 0 0 1 11,8 Z"/><path d="M 15,8 V 16 H 29 V 8"/><path d="M 14,40 V 27 H 34 V 40"/></g>
+    </g>
+  </g>
+  <g id="presetlijst" inkscape:label="Presetlijst" inkscape:groupmode="layer">
+    <rect id="dimmer" inkscape:label="dimmer" x="37.04" y="37.04" width="444.502" height="280.46" fill="#000000" fill-opacity="0.45"/>
+    <g id="lijst-venster" inkscape:label="lijst-venster"><rect x="53.625" y="89.079" width="411.333" height="194.375" rx="2" ry="2" fill="#1a1a1a" stroke="#4a4a4a" stroke-width="0.4"/><path inkscape:label="venster-accent" d="M 53.625,91.079 a 2,2 0 0 1 2,-2 h 407.333 a 2,2 0 0 1 2,2 v 0 H 53.625 Z" fill="#c8c8c8" stroke="#c8c8c8" stroke-width="1.2"/></g>
+    <g id="lijst-titel" inkscape:label="lijst-titel"><text x="61.625" y="105.579" style="font-weight:bold;font-size:11.29px;font-family:Lato;-inkscape-font-specification:Lato Bold;text-anchor:start;fill:#f9f9f9">Presets</text></g>
+    <g inkscape:label="sluiten (kruisje)" stroke="#c8c8c8" stroke-width="1.6" stroke-linecap="round"><line x1="448.958" y1="97.079" x2="456.958" y2="105.079"/><line x1="456.958" y1="97.079" x2="448.958" y2="105.079"/></g>
+    <g inkscape:label="rij 1: Init">
+      <rect x="61.625" y="113.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <text x="68.500" y="124.679" style="font-size:9px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Init</text>
+    </g>
+    <g inkscape:label="rij 2: Warm Pad (geladen)">
+      <rect x="61.625" y="131.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <rect inkscape:label="markering geladen preset" x="61.625" y="131.079" width="1.6" height="16.5" fill="#c8c8c8"/>
+      <text x="68.500" y="142.679" style="font-weight:bold;font-size:9px;font-family:Lato;-inkscape-font-specification:Lato Bold;text-anchor:start;fill:#f9f9f9">Warm Pad</text>
+      <g inkscape:label="icoon-hernoemen" transform="translate(412.645,132.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 31,9 L 39,17 L 18,38 H 10 V 30 Z"/><path d="M 26,14 L 34,22"/></g>
+      <g inkscape:label="icoon-verwijderen" transform="translate(432.645,132.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 8,13 H 40"/><path d="M 19,13 V 9 H 29 V 13"/><path d="M 12,13 L 14.5,40 H 33.5 L 36,13"/><path d="M 21,19 V 34"/><path d="M 27,19 V 34"/></g>
+    </g>
+    <g inkscape:label="rij 3: Bright Lead">
+      <rect x="61.625" y="149.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <text x="68.500" y="160.679" style="font-size:9px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Bright Lead</text>
+      <g inkscape:label="icoon-hernoemen" transform="translate(412.645,150.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 31,9 L 39,17 L 18,38 H 10 V 30 Z"/><path d="M 26,14 L 34,22"/></g>
+      <g inkscape:label="icoon-verwijderen" transform="translate(432.645,150.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 8,13 H 40"/><path d="M 19,13 V 9 H 29 V 13"/><path d="M 12,13 L 14.5,40 H 33.5 L 36,13"/><path d="M 21,19 V 34"/><path d="M 27,19 V 34"/></g>
+    </g>
+    <g inkscape:label="rij 4: Sub Bass">
+      <rect x="61.625" y="167.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <text x="68.500" y="178.679" style="font-size:9px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Sub Bass</text>
+      <g inkscape:label="icoon-hernoemen" transform="translate(412.645,168.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 31,9 L 39,17 L 18,38 H 10 V 30 Z"/><path d="M 26,14 L 34,22"/></g>
+      <g inkscape:label="icoon-verwijderen" transform="translate(432.645,168.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 8,13 H 40"/><path d="M 19,13 V 9 H 29 V 13"/><path d="M 12,13 L 14.5,40 H 33.5 L 36,13"/><path d="M 21,19 V 34"/><path d="M 27,19 V 34"/></g>
+    </g>
+    <g inkscape:label="rij 5: Glass Bells">
+      <rect x="61.625" y="185.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <text x="68.500" y="196.679" style="font-size:9px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Glass Bells</text>
+      <g inkscape:label="icoon-hernoemen" transform="translate(412.645,186.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 31,9 L 39,17 L 18,38 H 10 V 30 Z"/><path d="M 26,14 L 34,22"/></g>
+      <g inkscape:label="icoon-verwijderen" transform="translate(432.645,186.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 8,13 H 40"/><path d="M 19,13 V 9 H 29 V 13"/><path d="M 12,13 L 14.5,40 H 33.5 L 36,13"/><path d="M 21,19 V 34"/><path d="M 27,19 V 34"/></g>
+    </g>
+    <g inkscape:label="rij 6: Vocal Drone">
+      <rect x="61.625" y="203.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <text x="68.500" y="214.679" style="font-size:9px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Vocal Drone</text>
+      <g inkscape:label="icoon-hernoemen" transform="translate(412.645,204.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 31,9 L 39,17 L 18,38 H 10 V 30 Z"/><path d="M 26,14 L 34,22"/></g>
+      <g inkscape:label="icoon-verwijderen" transform="translate(432.645,204.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 8,13 H 40"/><path d="M 19,13 V 9 H 29 V 13"/><path d="M 12,13 L 14.5,40 H 33.5 L 36,13"/><path d="M 21,19 V 34"/><path d="M 27,19 V 34"/></g>
+    </g>
+    <g inkscape:label="rij 7: Sync Pluck">
+      <rect x="61.625" y="221.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <text x="68.500" y="232.679" style="font-size:9px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Sync Pluck</text>
+      <g inkscape:label="icoon-hernoemen" transform="translate(412.645,222.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 31,9 L 39,17 L 18,38 H 10 V 30 Z"/><path d="M 26,14 L 34,22"/></g>
+      <g inkscape:label="icoon-verwijderen" transform="translate(432.645,222.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 8,13 H 40"/><path d="M 19,13 V 9 H 29 V 13"/><path d="M 12,13 L 14.5,40 H 33.5 L 36,13"/><path d="M 21,19 V 34"/><path d="M 27,19 V 34"/></g>
+    </g>
+    <g inkscape:label="rij 8: Formant Choir">
+      <rect x="61.625" y="239.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <text x="68.500" y="250.679" style="font-size:9px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Formant Choir</text>
+      <g inkscape:label="icoon-hernoemen" transform="translate(412.645,240.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 31,9 L 39,17 L 18,38 H 10 V 30 Z"/><path d="M 26,14 L 34,22"/></g>
+      <g inkscape:label="icoon-verwijderen" transform="translate(432.645,240.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 8,13 H 40"/><path d="M 19,13 V 9 H 29 V 13"/><path d="M 12,13 L 14.5,40 H 33.5 L 36,13"/><path d="M 21,19 V 34"/><path d="M 27,19 V 34"/></g>
+    </g>
+    <g inkscape:label="rij 9: Reso Sweep">
+      <rect x="61.625" y="257.079" width="387.5" height="16.5" rx="1.2" ry="1.2" fill="#262626"/>
+      <text x="68.500" y="268.679" style="font-size:9px;font-family:Lato;-inkscape-font-specification:Lato;text-anchor:start;fill:#f9f9f9">Reso Sweep</text>
+      <g inkscape:label="icoon-hernoemen" transform="translate(412.645,258.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 31,9 L 39,17 L 18,38 H 10 V 30 Z"/><path d="M 26,14 L 34,22"/></g>
+      <g inkscape:label="icoon-verwijderen" transform="translate(432.645,258.849) scale(0.27)" fill="none" stroke="#c8c8c8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M 8,13 H 40"/><path d="M 19,13 V 9 H 29 V 13"/><path d="M 12,13 L 14.5,40 H 33.5 L 36,13"/><path d="M 21,19 V 34"/><path d="M 27,19 V 34"/></g>
+    </g>
+    <g id="lijst-scrollbalk" inkscape:label="lijst-scrollbalk">
+      <rect x="453.3" y="113.079" width="1.6" height="160.500" rx="0.8" fill="#333333"/>
+      <rect x="453.3" y="113.079" width="1.6" height="115.560" rx="0.8" fill="#c8c8c8"/>
+    </g>
+  </g>
+</svg>

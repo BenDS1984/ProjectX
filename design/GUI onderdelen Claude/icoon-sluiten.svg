@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Voorstel: icoon om de app te sluiten, in de stijl van icoon-keyboard.svg, icoon-latch.svg
+  en icoon-aan-uit.svg. Document 48 x 48 px. Lijndikte 3, ronde uiteinden en hoeken.
+  Het "power"-teken is al in gebruik als aan/uit van de oscillatoren; daarom een ander teken:
+  een deurkozijn (open naar rechts) met een pijl die naar buiten wijst ("verlaten").
+  Kleur in rust: lichtgrijs #C8C8C8. Zolang je erop drukt kan het oranje worden (#FF8A1E);
+  die kleurwissel doe ik in de app.
+  De laag "icoon-sluiten" is het voorstel; "alternatief-kruis" is een eenvoudig kruis,
+  alleen om te vergelijken (standaard verborgen).
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="48px" height="48px" viewBox="0 0 48 48">
+
+  <!-- Donkere ondergrond, alleen om het voorbeeld te tonen -->
+  <g id="achtergrond" inkscape:label="achtergrond" inkscape:groupmode="layer">
+    <rect x="0" y="0" width="48" height="48" fill="#2B2B2B"/>
+  </g>
+
+  <g id="icoon-sluiten" inkscape:label="icoon-sluiten" inkscape:groupmode="layer">
+    <g fill="none" stroke="#C8C8C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Deurkozijn: links, boven en onder, rechts open -->
+      <path id="sluiten-kozijn" inkscape:label="sluiten-kozijn"
+            d="M 23 9 H 12 A 3 3 0 0 0 9 12 V 36 A 3 3 0 0 0 12 39 H 23"/>
+      <!-- Pijl naar buiten -->
+      <line id="sluiten-pijl-steel" inkscape:label="sluiten-pijl-steel"
+            x1="19" y1="24" x2="39" y2="24"/>
+      <path id="sluiten-pijl-punt" inkscape:label="sluiten-pijl-punt"
+            d="M 32 17 L 39 24 L 32 31"/>
+    </g>
+  </g>
+
+  <g id="alternatief-kruis" inkscape:label="alternatief-kruis" inkscape:groupmode="layer"
+     style="display:none">
+    <g fill="none" stroke="#C8C8C8" stroke-width="3" stroke-linecap="round">
+      <line x1="13" y1="13" x2="35" y2="35"/>
+      <line x1="35" y1="13" x2="13" y2="35"/>
+    </g>
+  </g>
+</svg>

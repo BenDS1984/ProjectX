@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Voorstel: schermkeyboard voor Project X (2 octaven, C3 t/m C5, met octaafknoppen).
+  Document 1656 x 376 px = het roze vak "Plaats keyboard" in Synth1OscA-v4.svg.
+  Het keyboard scrollt niet mee; het keyboard-icoon in de linkermenubalk toont/verbergt het.
+  Lagen:
+    kb-achtergrond   : paneel in de kleur van de menubalken (#1A1A1A)
+    kb-octaaf        : knop omhoog (+1 octaaf) en omlaag (-1 octaaf), met daartussen de laagste noot
+    kb-witte-toetsen : 15 witte toetsen
+    kb-zwarte-toetsen: 10 zwarte toetsen
+    kb-ingedrukt     : voorbeeld van een ingedrukte toets (oranje); de app kleurt de klinkende toets zo
+    kb-labels        : C-namen onderaan; tekst wordt in de app toegevoegd (lettertype Lato, normaal)
+  Octaafbereik voorstel: laagste noot C1 t/m C5 (standaard C3).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1656px" height="376px" viewBox="0 0 1656 376">
+<g id="kb-achtergrond" inkscape:label="kb-achtergrond" inkscape:groupmode="layer">
+  <rect x="0" y="0" width="1656" height="376" fill="#1A1A1A"/>
+</g>
+<g id="kb-octaaf" inkscape:label="kb-octaaf" inkscape:groupmode="layer">
+  <g id="octaaf-omhoog" inkscape:label="octaaf-omhoog">
+    <rect x="10" y="10" width="104" height="128" rx="4" ry="4" fill="#4D4D4D"/>
+    <path d="M 10,14 a 4,4 0 0 1 4,-4 h 96 a 4,4 0 0 1 4,4 v 3 H 10 Z" fill="#FF8A1E"/>
+    <path d="M 48.0,83.0 L 62.0,69.0 L 76.0,83.0" fill="none" stroke="#C8C8C8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="octaaf-omlaag" inkscape:label="octaaf-omlaag">
+    <rect x="10" y="238" width="104" height="128" rx="4" ry="4" fill="#4D4D4D"/>
+    <path d="M 10,242 a 4,4 0 0 1 4,-4 h 96 a 4,4 0 0 1 4,4 v 3 H 10 Z" fill="#FF8A1E"/>
+    <path d="M 48.0,297.0 L 62.0,311.0 L 76.0,297.0" fill="none" stroke="#C8C8C8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="62.0" y="201.0" text-anchor="middle" font-family="Lato" font-weight="bold" font-size="38" fill="#F9F9F9">C3</text>
+</g>
+<g id="kb-witte-toetsen" inkscape:label="kb-witte-toetsen" inkscape:groupmode="layer">
+  <rect x="128.00" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="229.33" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="330.67" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="432.00" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="533.33" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="634.67" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="736.00" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="837.33" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="938.67" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="1040.00" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="1141.33" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="1242.67" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="1344.00" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="1445.33" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+  <rect x="1546.67" y="10" width="97.33" height="356" rx="5" ry="5" fill="#E6E6E6"/>
+</g>
+<g id="kb-zwarte-toetsen" inkscape:label="kb-zwarte-toetsen" inkscape:groupmode="layer">
+  <rect x="193.93" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="196.93" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="295.27" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="298.27" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="497.93" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="500.93" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="599.27" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="602.27" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="700.60" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="703.60" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="903.27" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="906.27" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="1004.60" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="1007.60" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="1207.27" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="1210.27" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="1308.60" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="1311.60" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+  <rect x="1409.93" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="1412.93" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+</g>
+<g id="kb-ingedrukt" inkscape:label="kb-ingedrukt" inkscape:groupmode="layer">
+  <rect x="330.67" y="10" width="97.33" height="356" rx="5" ry="5" fill="#FF8A1E"/>
+  <rect x="295.27" y="10" width="66.80" height="216.60" rx="5" ry="5" fill="#1A1A1A"/>
+  <rect x="298.27" y="10" width="60.80" height="213.60" rx="4" ry="4" fill="#3A3A3A"/>
+</g>
+<g id="kb-labels" inkscape:label="kb-labels" inkscape:groupmode="layer">
+  <text x="176.67" y="348" text-anchor="middle" font-family="Lato" font-size="26" fill="#808080">C3</text>
+  <text x="886.00" y="348" text-anchor="middle" font-family="Lato" font-size="26" fill="#808080">C4</text>
+  <text x="1595.33" y="348" text-anchor="middle" font-family="Lato" font-size="26" fill="#808080">C5</text>
+</g>
+</svg>

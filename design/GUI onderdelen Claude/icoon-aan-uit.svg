@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Voorstel: aan/uit-icoon (het bekende "power"-teken), in de stijl van icoon-keyboard.svg
+  en icoon-latch.svg. Document 48 x 48 px.
+  Een cirkel met een opening bovenaan (van -40 tot +40 graden) en een verticaal streepje
+  door die opening. Lijndikte 3, ronde uiteinden.
+  Kleur bij uit: lichtgrijs #C8C8C8. Bij aan: oranje #FF8A1E, net als de tekst
+  van de On/Off-knop nu. Die kleurwissel doe ik in de app.
+  De laag "icoon-aan-uit" bevat het icoon in de uit-kleur; "voorbeeld-aan" is dezelfde
+  vorm in oranje en dient alleen om te vergelijken (standaard verborgen).
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="48px" height="48px" viewBox="0 0 48 48">
+
+  <!-- Donkere ondergrond, alleen om het voorbeeld te tonen -->
+  <g id="achtergrond" inkscape:label="achtergrond" inkscape:groupmode="layer">
+    <rect x="0" y="0" width="48" height="48" fill="#2B2B2B"/>
+  </g>
+
+  <g id="icoon-aan-uit" inkscape:label="icoon-aan-uit" inkscape:groupmode="layer">
+    <g fill="none" stroke="#C8C8C8" stroke-width="3" stroke-linecap="round">
+      <!-- Cirkel, middelpunt (24, 26), straal 13, opening bovenaan -->
+      <path id="aan-uit-boog" inkscape:label="aan-uit-boog"
+            d="M 32.36 16.04 A 13 13 0 1 1 15.64 16.04"/>
+      <!-- Streepje door de opening -->
+      <line id="aan-uit-streep" inkscape:label="aan-uit-streep"
+            x1="24" y1="8" x2="24" y2="22"/>
+    </g>
+  </g>
+
+  <g id="voorbeeld-aan" inkscape:label="voorbeeld-aan" inkscape:groupmode="layer"
+     style="display:none">
+    <g fill="none" stroke="#FF8A1E" stroke-width="3" stroke-linecap="round">
+      <path d="M 32.36 16.04 A 13 13 0 1 1 15.64 16.04"/>
+      <line x1="24" y1="8" x2="24" y2="22"/>
+    </g>
+  </g>
+</svg>

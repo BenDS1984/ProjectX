@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app_name wordt in app/build.gradle.kts gezet, met het versienummer erbij. -->
+</resources>

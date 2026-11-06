@@ -1,0 +1,1 @@
+﻿Bron: https://github.com/josmithiii/gists/tree/main/faust-plugin (commit 235338f, 30-10-2026), MIT-licentie, door Julius O. Smith III.

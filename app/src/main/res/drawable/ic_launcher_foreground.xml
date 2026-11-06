@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icoon: witte sinusgolf (de oranje achtergrond staat in colors.xml) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M30.00,54.00 L31.00,52.04 L32.00,50.12 L33.00,48.26 L34.00,46.50 L35.00,44.87 L36.00,43.39 L37.00,42.10 L38.00,41.01 L39.00,40.14 L40.00,39.51 L41.00,39.13 L42.00,39.00 L43.00,39.13 L44.00,39.51 L45.00,40.14 L46.00,41.01 L47.00,42.10 L48.00,43.39 L49.00,44.87 L50.00,46.50 L51.00,48.26 L52.00,50.12 L53.00,52.04 L54.00,54.00 L55.00,55.96 L56.00,57.88 L57.00,59.74 L58.00,61.50 L59.00,63.13 L60.00,64.61 L61.00,65.90 L62.00,66.99 L63.00,67.86 L64.00,68.49 L65.00,68.87 L66.00,69.00 L67.00,68.87 L68.00,68.49 L69.00,67.86 L70.00,66.99 L71.00,65.90 L72.00,64.61 L73.00,63.13 L74.00,61.50 L75.00,59.74 L76.00,57.88 L77.00,55.96 L78.00,54.00"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000" />
+</vector>

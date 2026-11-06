@@ -1,0 +1,22 @@
+.gradle/
+.kotlin/
+build/
+app/build/
+app/.cxx/
+local.properties
+.idea/
+*.iml
+captures/
+apk/
+
+# Open-sourceprojecten van anderen (alleen naslag)
+/Open source projects/
+
+# Tijdelijke bestanden van de DSP-test
+/tools/dsp-test/build/
+
+# Python-tussenbestanden
+__pycache__/
+
+# Inspiratiebeelden van anderen (alleen lokaal)
+/design/GUI inspiratie/

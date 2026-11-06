@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Voorstel: icoon voor het virtuele keyboard, voor de linkermenubalk.
+  Document 48 x 48 px. Een stukje pianoklavier: vijf witte toetsen (C t/m G) met drie zwarte toetsen.
+  Kleur in rust: lichtgrijs #C8C8C8. Als het keyboard open is, kan het icoon oranje worden (#FF8A1E),
+  net als het actieve icoon in de menubalk van het voorbeeld. Die kleurwissel doe ik in de app.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="48px" height="48px" viewBox="0 0 48 48">
+
+  <!-- Donkere ondergrond, alleen om het voorbeeld te tonen -->
+  <g id="achtergrond" inkscape:label="achtergrond" inkscape:groupmode="layer">
+    <rect x="0" y="0" width="48" height="48" fill="#2B2B2B"/>
+  </g>
+
+  <g id="icoon-keyboard" inkscape:label="icoon-keyboard" inkscape:groupmode="layer">
+    <!-- Omtrek van het klavier -->
+    <rect x="5" y="11" width="38" height="26" rx="3" ry="3"
+          fill="none" stroke="#C8C8C8" stroke-width="3"/>
+    <!-- Scheidingen tussen de witte toetsen (alleen onder de zwarte toetsen zichtbaar, behalve tussen E en F) -->
+    <g stroke="#C8C8C8" stroke-width="2" stroke-linecap="butt">
+      <line x1="12.6" y1="24" x2="12.6" y2="36"/>
+      <line x1="20.2" y1="24" x2="20.2" y2="36"/>
+      <line x1="27.8" y1="12" x2="27.8" y2="36"/>
+      <line x1="35.4" y1="24" x2="35.4" y2="36"/>
+    </g>
+    <!-- Zwarte toetsen (C#, D#, F#), gevuld in de icoonkleur -->
+    <g fill="#C8C8C8">
+      <rect x="10.1" y="12" width="5" height="13" rx="1" ry="1"/>
+      <rect x="17.7" y="12" width="5" height="13" rx="1" ry="1"/>
+      <rect x="32.9" y="12" width="5" height="13" rx="1" ry="1"/>
+    </g>
+  </g>
+</svg>

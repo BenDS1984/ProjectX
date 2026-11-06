@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Voorstel: icoon voor "latch" (ingedrukte toetsen blijven klinken), in de stijl van icoon-keyboard.svg.
+  Document 48 x 48 px. Een klein klavier waarvan één witte toets (E) ingedrukt/gevuld is,
+  met rechtsboven een hangslotje: "deze toets blijft vastgezet".
+  Kleur in rust: lichtgrijs #C8C8C8; als latch aan staat kan het icoon oranje worden (#FF8A1E).
+  Let op: rond het slotje loopt een dunne rand in de achtergrondkleur (#2B2B2B), zodat het los
+  komt van het klavier. Die rand moet in de app dezelfde kleur krijgen als de menubalk.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="48px" height="48px" viewBox="0 0 48 48">
+
+  <!-- Donkere ondergrond, alleen om het voorbeeld te tonen -->
+  <g id="achtergrond" inkscape:label="achtergrond" inkscape:groupmode="layer">
+    <rect x="0" y="0" width="48" height="48" fill="#2B2B2B"/>
+  </g>
+
+  <g id="icoon-latch" inkscape:label="icoon-latch" inkscape:groupmode="layer">
+
+    <!-- Klavier: vier witte toetsen (C t/m F) -->
+    <g id="latch-klavier" inkscape:label="latch-klavier">
+      <rect x="3" y="17" width="32" height="24" rx="3" ry="3"
+            fill="none" stroke="#C8C8C8" stroke-width="3"/>
+      <g stroke="#C8C8C8" stroke-width="2">
+        <line x1="11" y1="29" x2="11" y2="40"/>
+        <line x1="19" y1="29" x2="19" y2="40"/>
+        <line x1="27" y1="18" x2="27" y2="40"/>
+      </g>
+      <!-- Zwarte toetsen C# en D# -->
+      <g fill="#C8C8C8">
+        <rect x="9"  y="18" width="4" height="11" rx="1" ry="1"/>
+        <rect x="17" y="18" width="4" height="11" rx="1" ry="1"/>
+      </g>
+      <!-- De vastgehouden toets (E), gevuld -->
+      <path d="M 22 18.5 H 26 V 39.5 H 20 V 31 H 22 Z" fill="#C8C8C8"/>
+    </g>
+
+    <!-- Uitsparing in achtergrondkleur, zodat het slotje los komt van het klavier -->
+    <g id="latch-uitsparing" inkscape:label="latch-uitsparing"
+       fill="none" stroke="#2B2B2B" stroke-linejoin="round">
+      <rect x="30" y="13" width="15" height="12" rx="2" ry="2" fill="#2B2B2B" stroke-width="4"/>
+      <path d="M 33.5 13 V 9.5 A 4 4 0 0 1 41.5 9.5 V 13" stroke-width="7"/>
+    </g>
+
+    <!-- Hangslotje -->
+    <g id="latch-slot" inkscape:label="latch-slot">
+      <path d="M 33.5 13 V 9.5 A 4 4 0 0 1 41.5 9.5 V 13"
+            fill="none" stroke="#C8C8C8" stroke-width="3"/>
+      <rect x="30" y="13" width="15" height="12" rx="2" ry="2" fill="#C8C8C8"/>
+      <circle cx="37.5" cy="19" r="1.6" fill="#2B2B2B"/>
+    </g>
+  </g>
+</svg>

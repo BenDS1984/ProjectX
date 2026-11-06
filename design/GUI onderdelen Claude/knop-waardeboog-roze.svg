@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Waardeboog in roze (#FF54B0), kleur van de tekst bij de UNISON-knop in het voorbeeldbestand.
+  Zelfde maten en plaats als in knop-voorbeeld-licht.svg (document 240x240, midden 120,120).
+  Bewegingsbereik: -135° (minimum) tot +135° (maximum); getoonde stand 38,6 %.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="240px" height="240px" viewBox="0 0 240 240">
+  <g id="knop-waardeboog" inkscape:label="knop-waardeboog" inkscape:groupmode="layer">
+    <path d="M 63.43 176.57 A 80 80 0 0 1 79.06 51.27"
+          fill="none" stroke="#FF54B0" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>
