@@ -9,6 +9,12 @@ The sound engine is written in [Faust](https://faust.grame.fr/), audio output ru
 *The v0.10 screen with the keyboard hidden, rendered with the same measurements and colors as the
 app (`docs/teken_scherm.py`).*
 
+## About this project
+
+Project X is purely a hobby project. It explores what is possible when an app is built with the
+help of AI: the code is written by an AI assistant (Claude), while the design, the choices and
+the testing on a real tablet are done by me.
+
 ## Status
 
 **Project X is in active development.** What is here now is an early stage: many parts are
