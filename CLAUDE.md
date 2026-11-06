@@ -1,8 +1,9 @@
 # Projectafspraken – Project X
 
-Android-synthesizerapp waarmee de gebruiker muziek kan maken. De app is voor persoonlijk gebruik;
-de APK wordt niet verspreid. De broncode staat openbaar op GitHub onder de GPL-3.0-licentie
-(zie `README.md` en `LICENSE`).
+Android-synthesizerapp waarmee de gebruiker muziek kan maken. Het is een hobbyproject
+dat onderzoekt hoe je een app bouwt met hulp van AI. De broncode staat openbaar op GitHub onder
+de GPL-3.0-licentie (zie `README.md` en `LICENSE`); een APK wordt er alleen als release
+gepubliceerd als de gebruiker daarom vraagt.
 
 ## Samenwerking
 
