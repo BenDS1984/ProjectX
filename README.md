@@ -9,6 +9,19 @@ The sound engine is written in [Faust](https://faust.grame.fr/), audio output ru
 *The v0.10 screen with the keyboard hidden, rendered with the same measurements and colors as the
 app (`docs/teken_scherm.py`).*
 
+## Status
+
+**Project X is in active development.** What is here now is an early stage: many parts are
+still to come, including:
+
+- effects
+- a sequencer
+- a mixer
+- a sampler
+- filters, envelopes and modulation
+
+Features, the interface and the file formats (such as presets) may still change between versions.
+
 ## Features (v0.10)
 
 - Monophonic, with two wavetable oscillators (Osc A and Osc B), each with 8 wavetables.
