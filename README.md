@@ -1,53 +1,52 @@
 # Project X
 
-Een Android-synthesizer voor tablets (liggend, ontworpen voor 1920×1200), gemaakt voor persoonlijk
-gebruik. De klank is geschreven in [Faust](https://faust.grame.fr/), de geluidsuitvoer loopt via
-[Oboe](https://github.com/google/oboe) en het scherm is getekend in Kotlin met Jetpack Compose.
+An Android synthesizer for tablets (landscape only, designed for 1920×1200), made for personal use.
+The sound engine is written in [Faust](https://faust.grame.fr/), audio output runs through
+[Oboe](https://github.com/google/oboe), and the interface is drawn in Kotlin with Jetpack Compose.
 
-## Wat hij kan (v0.10)
+## Features (v0.10)
 
-- Monofoon, met twee wavetable-oscillatoren (Osc A en Osc B), elk met 8 wavetables.
-- Per oscillator: Wave (positie in de wavetable), Amp, Oct, Cent en Pan, in stereo.
-- Mix tussen A en B met gelijk vermogen.
-- Schermkeyboard van 2 octaven met latch.
-- Oscilloscoop, VU-meter en DSP-meting.
-- Presets: opslaan, overschrijven, hernoemen en verwijderen.
+- Monophonic, with two wavetable oscillators (Osc A and Osc B), each with 8 wavetables.
+- Per oscillator: Wave (position in the wavetable), Amp, Oct, Cent and Pan, in stereo.
+- Equal-power mix between A and B.
+- Two-octave on-screen keyboard with latch.
+- Oscilloscope, VU meter and DSP load meter.
+- Presets: save, overwrite, rename and delete.
 
-Het verloop van het project staat in [docs/ProjectX-logboek.html](docs/ProjectX-logboek.html).
-De commitcodes daarin verwijzen naar de lokale geschiedenis van vóór deze openbare versie;
-op GitHub begint de geschiedenis bij v0.10.
-De afspraken waarmee het gebouwd wordt staan in [CLAUDE.md](CLAUDE.md).
+The project history is in [docs/ProjectX-logboek.html](docs/ProjectX-logboek.html) and the working
+agreements are in [CLAUDE.md](CLAUDE.md), both in Dutch. The commit hashes in the logbook refer
+to the local history from before this public version; on GitHub the history starts at v0.10.
 
-## Mappen
+## Folders
 
-| Map | Inhoud |
+| Folder | Contents |
 |---|---|
-| `app/src/main/faust/` | De klank in Faust (`voice.dsp`) |
-| `app/src/main/cpp/` | Geluidsmotor in C++ en de koppeling met Oboe |
-| `app/src/main/java/` | Scherm en bediening (Kotlin/Compose) |
-| `app/src/main/assets/` | `wavetables.bin`, de wavetables van de app |
-| `design/` | GUI-ontwerpen (Inkscape SVG) |
-| `tools/dsp-test/` | Geluidstest op de pc |
-| `tools/wavetables/` | Omzetter die `wavetables.bin` maakt |
-| `docs/` | Logboek |
+| `app/src/main/faust/` | The sound engine in Faust (`voice.dsp`) |
+| `app/src/main/cpp/` | C++ engine and the Oboe audio output |
+| `app/src/main/java/` | User interface (Kotlin/Compose) |
+| `app/src/main/assets/` | `wavetables.bin`, the app's wavetables |
+| `design/` | GUI designs (Inkscape SVG) |
+| `tools/dsp-test/` | Sound test that runs on a PC |
+| `tools/wavetables/` | Converter that builds `wavetables.bin` |
+| `docs/` | Logbook |
 
-## Bouwen
+## Building
 
-Android Studio met de NDK en CMake, en de Faust-compiler op het pad. Daarna:
+You need Android Studio with the NDK and CMake, and the Faust compiler on your path. Then run:
 
 ```
 gradlew assembleDebug
 ```
 
-## Licentie
+## License
 
-Project X valt onder de **GNU General Public License versie 3** (zie [LICENSE](LICENSE)),
-omdat het wavetablegegevens uit Surge XT bevat.
+Project X is licensed under the **GNU General Public License version 3** (see [LICENSE](LICENSE)),
+because it contains wavetable data from Surge XT.
 
-## Bronnen en dank
+## Credits
 
-- **Wavetables:** zeven van de acht wavetables zijn omgezet uit
-  [Surge XT](https://github.com/surge-synthesizer/surge) (GPL-3.0), uit de map
+- **Wavetables:** seven of the eight wavetables are converted from
+  [Surge XT](https://github.com/surge-synthesizer/surge) (GPL-3.0), from the folder
   `resources/data/wavetables/`:
   - `Generated/PWM.wt` (PWM)
   - `Generated/Saw Sync.wt` (Saw Sync)
@@ -57,10 +56,10 @@ omdat het wavetablegegevens uit Surge XT bevat.
   - `Generated/Sawtooth Reso.wt` (Saw Reso)
   - `Sampled/Vocal O Formant 2.wt` (Vocal O)
 
-  Ze zijn bandbegrensd en genormaliseerd met `tools/wavetables/make_wavetables.py`.
-  De wavetable "Basic" is eigen werk.
-- **Lettertype:** Lato van Łukasz Dziedzic, SIL Open Font License 1.1
-  (zie [licenses/OFL-Lato.txt](licenses/OFL-Lato.txt)).
-- **Faust-skill** in `.claude/skills/faust/`: van Julius O. Smith III, MIT-licentie
-  (zie het `LICENSE`-bestand in die map).
-- **Faust-bibliotheken** en **Oboe** worden bij het bouwen gebruikt onder hun eigen licenties.
+  They were band-limited and normalized with `tools/wavetables/make_wavetables.py`.
+  The "Basic" wavetable is original work.
+- **Font:** Lato by Łukasz Dziedzic, SIL Open Font License 1.1
+  (see [licenses/OFL-Lato.txt](licenses/OFL-Lato.txt)).
+- **Faust skill** in `.claude/skills/faust/`: by Julius O. Smith III, MIT License
+  (see the `LICENSE` file in that folder).
+- **Faust libraries** and **Oboe** are used at build time under their own licenses.

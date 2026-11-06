@@ -22,8 +22,8 @@ de APK wordt niet verspreid. De broncode staat openbaar op GitHub onder de GPL-3
   vervormt.
 - **Rekenkracht:** de SM-T580 heeft een eenvoudige processor (8 zuinige kernen, uit 2016). Die geldt
   als maatstaf voor de DSP-belasting: wat daar vlot draait, draait overal.
-- **Taal:** alleen de GUI van de app is Engels. Al het overige is Nederlands: de communicatie,
-  de toelichtingen in de code en de projectdocumenten.
+- **Taal:** alleen de GUI van de app en `README.md` (voor GitHub) zijn Engels. Al het overige is
+  Nederlands: de communicatie, de toelichtingen in de code en de projectdocumenten.
 
 ## Techniek
 
